@@ -177,6 +177,54 @@
             background: white;
         }
 
+        .game-card {
+            background: var(--background-white);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .game-card p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .game-link {
+            display: inline-block;
+            background: var(--primary-blue);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+        }
+
+        .game-link:hover {
+            background: #0056D6;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 122, 255, 0.4);
+        }
+
         /* Features grid */
         .features-grid {
             display: grid;
@@ -360,19 +408,15 @@
                 While waiting for Dune: Awakening, experience these exciting Dune-themed games available to play right now!
             </p>
             <div class="games-grid">
-                <div class="game-frame">
-                    <h3>Wormsign</h3>
-                    <iframe src="https://mrmeowmurs.itch.io/wormsign" 
-                            title="Wormsign - Dune Inspired Game"
-                            loading="lazy">
-                    </iframe>
+                <div class="game-card">
+                    <h3>🏜️ Wormsign</h3>
+                    <p>Experience the thrill of navigating the treacherous deserts of Arrakis in this atmospheric Dune-inspired adventure. Avoid the mighty sandworms and survive the harsh desert environment.</p>
+                    <a href="https://mrmeowmurs.itch.io/wormsign" target="_blank" class="game-link">Play Wormsign</a>
                 </div>
-                <div class="game-frame">
-                    <h3>Sandworms: Bloodlust</h3>
-                    <iframe src="https://elpasteltogrunon.itch.io/sandworms-bloodlust" 
-                            title="Sandworms: Bloodlust - Dune Inspired Game"
-                            loading="lazy">
-                    </iframe>
+                <div class="game-card">
+                    <h3>🪱 Sandworms: Bloodlust</h3>
+                    <p>Take control of the legendary sandworms of Arrakis in this action-packed game. Hunt your prey and dominate the desert in true Dune fashion.</p>
+                    <a href="https://elpasteltogrunon.itch.io/sandworms-bloodlust" target="_blank" class="game-link">Play Sandworms: Bloodlust</a>
                 </div>
             </div>
         </div>
